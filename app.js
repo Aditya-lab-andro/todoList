@@ -17,19 +17,11 @@ const Item = mongoose.model("Item",itemsSchema);
 const task1 = new Item({
   name:"Add new item.."
 });
-// const task2 = new Item({
-//   name:"Cook Food"
-// });
-// const task3 = new Item({
-//   name:"Eat Food"
-// });
 
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
-
 
 const defaultItems = [task1];
 
